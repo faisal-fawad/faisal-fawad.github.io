@@ -1,9 +1,12 @@
-function App() {
+import Nav from './components/Nav.jsx'
+
+export default function App() {
   return (
-    <h1 className="text-3xl font-bold text-black text-center">
-      Hello world!
-    </h1>
+    <>
+      <Nav />
+      <div id="home" className='bg-red-300 h-[1000px] w-[100%]'></div>
+      <div id="about" className='bg-green-300 h-[1000px] w-[100%]'></div>
+      <div id="projects" className='bg-blue-300 h-[1000px] w-[100%]'></div>
+    </>
   )
 }
-
-export default App
