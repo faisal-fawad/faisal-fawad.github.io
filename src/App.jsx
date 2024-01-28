@@ -1,12 +1,17 @@
 import Nav from './components/Nav.jsx'
+import Home from './components/Home.jsx'
+import About from './components/About.jsx'
+import Projects from './components/Projects.jsx'
+import Footer from './components/Footer.jsx'
 
 export default function App() {
   return (
-    <>
-      <Nav />
-      <div id="home" className='bg-red-300 h-[1000px] w-[100%]'></div>
-      <div id="about" className='bg-green-300 h-[1000px] w-[100%]'></div>
-      <div id="projects" className='bg-blue-300 h-[1000px] w-[100%]'></div>
-    </>
+    <main className="dark:bg-slate-800 bg-slate-200">
+      <Nav/>
+      <Home/>
+      <About/>
+      <Projects/>
+      <Footer/>
+    </main>
   )
 }
