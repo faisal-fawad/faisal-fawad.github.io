@@ -10,8 +10,8 @@ export default function Nav() {
 
   return (
     <nav className="w-[100%] h-[100px] max-w-[800px] m-auto z-10 bg-slate-200 sticky top-0 dark:bg-slate-800">
-      <div className="flex justify-between h-[100%] w-[100%] p-[25px]">
-        <label className="relative inline-flex items-center cursor-pointer h-[50px]">
+      <div className="flex justify-between h-[100%] w-[100%] py-[25px]">
+        <label className="relative inline-flex items-center cursor-pointer h-[50px] px-[25px]">
           <input type="checkbox" className="sr-only peer" onClick={toggleTheme}/>
           <div className="w-[60px] h-[34px] bg-slate-300 rounded-full relative inline-flex items-center justify-around
           after:content-[''] after:bg-slate-900 after:w-[28px] after:h-[28px] after:rounded-full after:absolute

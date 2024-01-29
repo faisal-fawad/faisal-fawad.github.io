@@ -27,18 +27,19 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="max-w-[600px] mx-auto py-12 my-10 text-slate-900 dark:text-slate-200">
+    <section id="projects" className="max-w-[600px] mx-auto py-12 my-10 text-slate-900 dark:text-slate-200 box-content px-[10px]">
       <h1 className="text-3xl font-bold">Projects</h1>
       <ul>
         {projects.map((project, i) => (
           <li key={i} className="p-4 my-4 rounded-lg bg-slate-300 text-slate-900 dark:bg-slate-700 dark:text-slate-200 
             hover:scale-[1.015] transition-transform">
             <a target="_blank" href={project.link}>
-              <h2 className="text-xl font-semibold">{project.name}</h2>
-              <p className="my-2 dark:text-slate-200 text-slate-900">{project.description}</p>
+              <h2 className="text-xl max-[625px]:text-lg font-semibold">{project.name}</h2>
+              <p className="my-2 dark:text-slate-200 text-slate-900 max-[625px]:text-sm">{project.description}</p>
               <ul className="flex flex-wrap">
                 {project.technologies.map((technology, j) => (
-                  <li key={j} className="border-slate-600 text-slate-900 dark:border-slate-400 dark:text-slate-200 border-[1px] rounded px-3 py-1 mt-2 mr-2 font-light">
+                  <li key={j} className="border-slate-600 text-slate-900 dark:border-slate-400 dark:text-slate-200 
+                    border-[1px] rounded px-3 py-1 mt-2 mr-2 font-light max-[625px]:text-sm">
                     {technology}
                   </li>
                 ))}
