@@ -59,7 +59,7 @@ export default function Nav() {
           {buildNav(true)}
         </ul>
         {/* Desktop navigation */}
-        <a target="_blank" href="https://github.com/faisal-fawad/personal-website" className="fixed w-20 h-20 right-0 top-0 max-[1000px]:hidden">
+        <a target="_blank" href="https://github.com/faisal-fawad/faisal-fawad.github.io" className="fixed w-20 h-20 right-0 top-0 max-[1000px]:hidden">
           <Source className="fill-slate-900 text-slate-200 dark:fill-slate-200 dark:text-slate-800"/>
         </a>
         <ul id="desktop-nav" className="flex h-[100%] items-center max-[625px]:hidden">
