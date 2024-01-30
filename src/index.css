@@ -54,3 +54,28 @@
 :root.dark {
     background-color: rgb(30 41 59);
 }
+
+/* Hamburger menu animation */
+.ham-bot, .ham-mid, .ham-top {
+    transition: top .2s .2s, bottom .2s .2s, transform .2s, visibility 0s .2s;
+    transition-timing-function: ease-in-out;
+}
+
+.ham-active {
+    transition: top .2s, bottom .2s, transform .2s .2s, visibility .2s;
+    transition-timing-function: ease-in-out;
+}
+
+.ham-active.ham-bot {
+    bottom: 23px;
+    transform: rotate(45deg);
+}
+
+.ham-active.ham-mid {
+    visibility: hidden;
+}
+
+.ham-active.ham-top {
+    top: 23px;
+    transform: rotate(-45deg);
+}

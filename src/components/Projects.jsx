@@ -1,9 +1,9 @@
 export default function Projects() {
   const projects = [
     {
-      name: "Pokepedia",
+      name: "Poképedia",
       link: "https://github.com/faisal-fawad/pokepedia",
-      description: "Full-stack web application functioning as a Pokedex",
+      description: "Full-stack web application functioning as a Pokédex",
       technologies: ["SvelteKit", "Node.js", "Redis", "Docker", "Azure"]
     },
     {
@@ -31,9 +31,9 @@ export default function Projects() {
       <h1 className="text-3xl font-bold">Projects</h1>
       <ul>
         {projects.map((project, i) => (
-          <li key={i} className="p-4 my-4 rounded-lg bg-slate-300 text-slate-900 dark:bg-slate-700 dark:text-slate-200 
-            hover:scale-[1.015] transition-transform">
-            <a target="_blank" href={project.link}>
+          <li key={i} className="my-4 rounded-lg bg-slate-300 text-slate-900 dark:bg-slate-700 dark:text-slate-200 
+            hover:scale-[1.02] transition-transform">
+            <a target="_blank" href={project.link} className="block p-4">
               <h2 className="text-xl max-[625px]:text-lg font-semibold">{project.name}</h2>
               <p className="my-2 dark:text-slate-200 text-slate-900 max-[625px]:text-sm">{project.description}</p>
               <ul className="flex flex-wrap">
