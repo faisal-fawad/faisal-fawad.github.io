@@ -1,6 +1,6 @@
 # personal-website
 
-My personal website built with React and Tailwind CSS!
+My minamalistic personal website built with React and Tailwind CSS!
 
 ## Getting Started
 
