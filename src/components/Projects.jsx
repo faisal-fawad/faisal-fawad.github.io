@@ -32,7 +32,7 @@ export default function Projects() {
       <ul>
         {projects.map((project, i) => (
           <li key={i} className="my-4 rounded-lg bg-slate-300 text-slate-900 dark:bg-slate-700 dark:text-slate-200 
-            hover:scale-[1.02] transition-transform">
+            hover:scale-[1.02] hover:translate-y-[-2px] transition-transform">
             <a target="_blank" href={project.link} className="block p-4">
               <h2 className="text-xl max-[625px]:text-lg font-semibold">{project.name}</h2>
               <p className="my-2 dark:text-slate-200 text-slate-900 max-[625px]:text-sm">{project.description}</p>

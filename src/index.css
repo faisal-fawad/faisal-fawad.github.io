@@ -11,6 +11,16 @@
     font-stretch: 75% 125%;
   }
 
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
 @keyframes jump {
     0% {
         transform: scale3d(1, 1, 1);

@@ -5,7 +5,7 @@ export default function Home() {
       output: "I'm currently studying Computer Science at the University of Guelph with a minor in Mathematics. " +
         "My main interest lies in the vast world of software development and its intricacies. " +
         "I love solving complex problems, exploring new technologies, and strengthing my skillset. " +
-        "Aside from programming, I also spend some time playing many video games"
+        "Aside from programming, I also spend some time playing video games!"
     }
   ]
 
@@ -21,7 +21,8 @@ export default function Home() {
             </li>
           ))}
             <li className="my-4">
-              <div><span className="font-bold">faisal@desktop:~$ </span></div>
+              <div><span className="blink font-bold after:content-['|'] after:bg-slate-900 dark:after:bg-slate-200
+              after:animate-[blink_1s_infinite_step-end]">faisal@desktop:~$ </span></div>
             </li>
         </ul>
       </div>
