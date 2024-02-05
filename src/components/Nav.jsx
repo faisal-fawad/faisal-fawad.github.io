@@ -24,9 +24,10 @@ export default function Nav() {
   function buildNav(isMobile) {
     return (
       links.map((link, i) => (
-        <li key={i} className={"inline-block"} onClick={isMobile ? closeMenu : undefined}>
-          <a className="inline-block py-4 px-6 font-bold text-slate-900 dark:text-slate-200
-          hover:text-cyan-600 dark:hover:text-cyan-300" href={"/#" + link.toLowerCase()}>
+        <li key={i} className="block bg-slate-200 dark:bg-slate-800 text-center" onClick={isMobile ? closeMenu : undefined}>
+          <a className={"inline-block py-4 px-6 font-bold text-slate-900 dark:text-slate-200 " + (isMobile ? "translate-y-[-10px] " : "") +
+          "hover:text-cyan-600 dark:hover:text-cyan-300 transition-transform " + (isOpen ? "!translate-y-0" : "")}
+          href={"/#" + link.toLowerCase()}>
             {link}
           </a>
         </li>
@@ -53,10 +54,12 @@ export default function Nav() {
           <div className={"absolute w-[40px] h-[4px] top-[23px] dark:bg-slate-200 bg-slate-900 rounded-full ham-mid " + (isOpen ? "ham-active" : "")}></div>
           <div className={"absolute w-[40px] h-[4px] bottom-[14px] dark:bg-slate-200 bg-slate-900 rounded-full ham-bot " + (isOpen ? "ham-active" : "")}></div>
         </div>
-        <ul id="mobile-nav" className={"flex h-auto items-center min-[625px]:hidden bg-slate-200 dark:bg-slate-800 pb-[25px] invisible " +
-          "flex-col absolute top-[100px] w-[100%] opacity-0 transition-[opacity,visibility] " +
-          (isOpen ? "!visible opacity-100 h-auto" : "")}>
+        <ul id="mobile-nav" className={"flex h-[calc(100vh-100px)] min-[625px]:hidden to-transparent from-slate-800 invisible " +
+          "flex-col absolute top-[100px] w-[100%] opacity-0 transition-[opacity,visibility,height] backdrop-blur-sm " +
+          (isOpen ? "!visible opacity-100" : "")}>
           {buildNav(true)}
+          <li className="block h-[25px] min-h-[25px] bg-slate-200 dark:bg-slate-800"></li>
+          <li className="block from-slate-200 dark:from-slate-800 to-transparent bg-gradient-to-b grow text-center"></li>
         </ul>
         {/* Desktop navigation */}
         <a target="_blank" href="https://github.com/faisal-fawad/faisal-fawad.github.io" className="fixed w-20 h-20 right-0 top-0 max-[1000px]:hidden">
