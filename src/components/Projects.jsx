@@ -38,7 +38,7 @@ export default function Projects() {
               <p className="my-2 dark:text-slate-200 text-slate-900 max-[625px]:text-sm">{project.description}</p>
               <ul className="flex flex-wrap">
                 {project.technologies.map((technology, j) => (
-                  <li key={j} className="border-slate-600 text-slate-900 dark:border-slate-400 dark:text-slate-200 
+                  <li key={j} className="text-cyan-600 border-cyan-600 dark:border-cyan-300 dark:text-cyan-300
                     border-[1px] rounded px-3 py-1 mt-2 mr-2 font-light max-[625px]:text-sm">
                     {technology}
                   </li>
