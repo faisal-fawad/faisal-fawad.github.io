@@ -5,7 +5,7 @@ export default function Home() {
       output: "I'm currently studying Computer Science at the University of Guelph with a minor in Mathematics. " +
         "My main interest lies in the vast world of software development and its intricacies. " +
         "I love solving complex problems, exploring new technologies, and strengthing my skillset. " +
-        "I spend most of my free time programming, but I also like to play video games and work on graphics!"
+        "I spend most of my free time programming, but I also like to play video games, watch movies, and work on graphics!"
     }
   ]
 
