@@ -1,16 +1,22 @@
 export default function Projects() {
   const projects = [
     {
-      name: "Poképedia",
-      link: "https://github.com/faisal-fawad/pokepedia",
-      description: "Full-stack web application functioning as a Pokédex",
-      technologies: ["SvelteKit", "Node.js", "Redis", "Docker", "Azure"]
-    },
-    {
       name: "nSig-chan",
       link: "https://github.com/faisal-fawad/nSig-chan",
       description: "Discord bot for moderation and data visualization",
-      technologies: ["Python", "Discord API", "MongoDB", "Node.js"]
+      technologies: ["Python", "Discord API", "MongoDB", "Oracle Cloud"]
+    },
+    {
+      name: "vistorrent",
+      link: "https://github.com/faisal-fawad/vistorrent",
+      description: "Lightweight torrenting client with visualization",
+      technologies: ["Go", "JavaScript", "HTML/CSS"]
+    },
+    {
+      name: "Poképedia",
+      link: "https://github.com/faisal-fawad/pokepedia",
+      description: "Full-stack web application functioning as a Pokédex",
+      technologies: ["SvelteKit", "JavaScript", "HTML/CSS", "Redis", "Docker", "Azure"]
     },
     {
       name: "PrintNote",
@@ -19,10 +25,22 @@ export default function Projects() {
       technologies: ["C#", ".NET", "OneNote API"]
     },
     {
+      name: "Pool",
+      link: "https://github.com/faisal-fawad/pool",
+      description: "Full-stack web application functioning as a Pool game",
+      technologies: ["C", "Python", "SQL", "JQuery", "HTML/CSS"]
+    },
+    {
       name: "Kyrell's Adventure",
       link: "https://github.com/faisal-fawad/kyrells-adventure",
       description: "2D side scroller with custom assets and scaling difficulty",
       technologies: ["Unity", "C#"]
+    },
+    {
+      name: "Mancala",
+      link: "https://github.com/faisal-fawad/mancala",
+      description: "Desktop application functioning as a Mancala board game",
+      technologies: ["Java", "JUnit", "Java Swing"]
     }
   ]
 
