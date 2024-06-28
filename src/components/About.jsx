@@ -3,14 +3,13 @@ export default function Home() {
     {
       command: "cat about.txt",
       output: "I'm currently studying Computer Science at the University of Guelph with a minor in Mathematics. " +
-        "My main interest lies in the vast world of software development and its intricacies. " +
-        "I love solving complex problems, exploring new technologies, and strengthing my skillset. " +
-        "I spend most of my free time programming, but I also like to play video games, watch movies, and work on graphics!"
+        "I love solving complex problems, exploring new technologies, and utilizing my skills to build cool things! " +
+        "My main interests include programming 👨🏽‍💻, video games 🎮, movies 🎥, and art 🎨."
     }
   ]
 
   return (
-    <section id="about" className="box-content max-w-[600px] mx-auto py-10 px-[10px]">
+    <section id="about" className="box-content relative max-w-[600px] mx-auto py-10 px-[10px] z-10">
       <div className="text-lg bg-slate-300 text-slate-900 dark:bg-slate-700 dark:text-slate-200 rounded-lg flex flex-col">
         <div className="rounded-t-lg text-center py-1 text-base max-[625px]:text-sm bg-slate-700 text-slate-200 dark:bg-slate-300 dark:text-slate-900">faisal@desktop:~</div>
         <ul className="font-mono p-8 max-[625px]:text-sm max-[625px]:p-4">
