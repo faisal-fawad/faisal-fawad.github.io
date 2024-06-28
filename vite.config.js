@@ -6,9 +6,4 @@ import svgr from 'vite-plugin-svgr'
 export default defineConfig({
   base: '/',
   plugins: [react(), svgr()],
-  build: {
-    rollupOptions: {
-      external: ['three']
-    }
-  }
 })
