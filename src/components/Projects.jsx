@@ -45,7 +45,7 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="max-w-[600px] mx-auto py-12 my-10 text-slate-900 dark:text-slate-200 box-content px-[10px]">
+    <section id="projects" className="max-w-[600px] mx-auto py-12 my-10 text-slate-900 dark:text-slate-200 box-content px-[10px] relative z-10">
       <h1 className="text-3xl font-bold">Projects</h1>
       <ul>
         {projects.map((project, i) => (

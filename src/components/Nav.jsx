@@ -2,6 +2,7 @@ import Moon from '../assets/moon.svg?react'
 import Sun from '../assets/sun.svg?react'
 import Source from '../assets/source.svg?react'
 import { useState } from 'react';
+import { colorParticles } from '../three.js'
 
 export default function Nav() {
   const links = ["Home", "About", "Projects"];
@@ -9,6 +10,7 @@ export default function Nav() {
 
   function toggleTheme() {
     document.documentElement.classList.toggle('dark');
+    colorParticles();
   }
 
   function toggleMenu() {
@@ -36,7 +38,7 @@ export default function Nav() {
   }
 
   return (
-    <nav className="w-[100%] h-[100px] max-w-[800px] m-auto z-10 bg-slate-200 sticky top-0 dark:bg-slate-800">
+    <nav className="w-[100%] h-[100px] max-w-[800px] m-auto z-20 min-[625px]:z-0 bg-slate-200 block max-[625px]:sticky relative top-0 dark:bg-slate-800">
       <div className="flex justify-between h-[100%] w-[100%] py-[25px]">
         <label className="relative inline-flex items-center cursor-pointer h-[50px] px-[25px] max-[625px]:px-[10px]">
           <input type="checkbox" className="sr-only peer" aria-label="Switch for dark/light mode" onClick={toggleTheme}/>
