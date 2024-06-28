@@ -20,6 +20,8 @@ let NUM_PARTICLES = PARTICLE_LIMIT;
 const DEPTH = 1000;
 const RANGE = 650;
 const EXTRA = 10;
+const WHITE = new THREE.Color(0xffffff);
+const BLACK = new THREE.Color(0x000000);
 
 // Setup
 const container = document.getElementById("three");
@@ -34,7 +36,7 @@ camera.position.z = DEPTH;
 const geometry = new THREE.CircleGeometry(6, 32);
 const particles = [];
 for (let i = 0; i < NUM_PARTICLES; i++) {
-  const material = new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true });
+  const material = new THREE.MeshBasicMaterial({ color: WHITE, transparent: true });
   const particle = new THREE.Mesh(geometry, material);
   particle.position.z = Math.random() * RANGE;
   particle.position.x = Math.random() * visibleWidth(particle.position.z, camera) - visibleWidth(particle.position.z, camera) / 2;
@@ -45,7 +47,7 @@ for (let i = 0; i < NUM_PARTICLES; i++) {
   particle.material.opacity = opacity > .1 ? opacity : .1;
 
   // Add attributes
-  particle.direction = [Math.random() - .5, Math.random() / 2];
+  particle.direction = [(Math.random() - .5) / 2, Math.random() / 4];
   particle.scaleDirection = (Math.random() - .5 > 0) ? 1 : -1;
   particle.scaleSpeed = Math.random() / 250;
   particle.visible = true
@@ -75,7 +77,6 @@ function onResize() {
 function animate() {
   for (let i = 0; i < NUM_PARTICLES; i++) {
     const particle = particles[i];
-    particle.visible = true;
 
     // Movement code
     if (particle.position.x > -visibleWidth(particle.position.z, camera) / 2 - EXTRA &&
@@ -106,30 +107,41 @@ function newPosition(particle) {
   if (roll == 0) {
     particle.position.y = Math.random() * visibleHeight(particle.position.z, camera) - visibleHeight(particle.position.z, camera) / 2;
     particle.position.x = visibleWidth(particle.position.z, camera) / 2;
-    particle.direction = [-Math.random(), Math.random() / 2];
+    particle.direction = [-Math.random() / 2, Math.random() / 4];
   } else if (roll == 1) {
     particle.position.y = Math.random() * visibleHeight(particle.position.z, camera) - visibleHeight(particle.position.z, camera) / 2;
     particle.position.x = -visibleWidth(particle.position.z, camera) / 2;
-    particle.direction = [Math.random(), Math.random() / 2];
+    particle.direction = [Math.random() / 2, Math.random() / 4];
   } else /* 50% odds */ {
     particle.position.y = -visibleHeight(particle.position.z, camera) / 2;
     particle.position.x = Math.random() * visibleWidth(particle.position.z, camera) - visibleWidth(particle.position.z, camera) / 2;
-    particle.direction = [Math.random() - .5, Math.random() / 2];
+    particle.direction = [(Math.random() - .5) / 2, Math.random() / 4];
   }
 }
 
 function setParticles() {
   // Prevent lots of particles on mobile screens
   let count = PARTICLE_LIMIT;
-  if (window.innerWidth / 3 < count) {
-    count = window.innerWidth / 3 > 100 ? window.innerWidth / 3 : 100; 
+  if (window.innerWidth / 5 < count) {
+    count = window.innerWidth / 5 > 100 ? window.innerWidth / 5 : 100; 
   }
   return Math.floor(count);
 }
 
 function toggleParticles() {
+  for (let i = 0; i < NUM_PARTICLES; i++) {
+    const particle = particles[i];
+    particle.visible = true;
+  }
   for (let j = NUM_PARTICLES; j < PARTICLE_LIMIT; j++) {
     const particle = particles[j];
-    particle.visible = false
+    particle.visible = false;
+  }
+}
+
+export function colorParticles() {
+  for (let i = 0; i < PARTICLE_LIMIT; i++) {
+    const material = particles[i].material;
+    material.color.equals(WHITE) ? material.color.set(BLACK) : material.color.set(WHITE);
   }
 }
