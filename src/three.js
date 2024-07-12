@@ -120,9 +120,12 @@ function newPosition(particle) {
 }
 
 function setParticles() {
-  // Prevent lots of particles on mobile screens
+  // Prevent lots of particles on smaller screens
   let count = PARTICLE_LIMIT;
-  if (window.innerWidth / 5 < count) {
+  if (window.innerWidth < 625 /* Disable mobile */) {
+    count = 0
+  }
+  else if (window.innerWidth / 5 < count) {
     count = window.innerWidth / 5 > 100 ? window.innerWidth / 5 : 100; 
   }
   return Math.floor(count);
