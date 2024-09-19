@@ -1,6 +1,7 @@
 import Nav from './components/Nav.jsx'
 import Home from './components/Home.jsx'
 import About from './components/About.jsx'
+import Experience from './components/Experience.jsx'
 import Projects from './components/Projects.jsx'
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
       <Nav/>
       <Home/>
       <About/>
+      <Experience/>
       <Projects/>
     </main>
   )

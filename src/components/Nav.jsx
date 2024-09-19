@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { colorParticles } from '../three.js'
 
 export default function Nav() {
-  const links = ["Home", "About", "Projects"];
+  const links = ["Home", "About", "Work", "Projects"];
   const [isOpen, setOpen] = useState(false);
 
   function toggleTheme() {
