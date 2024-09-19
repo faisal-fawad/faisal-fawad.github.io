@@ -75,7 +75,7 @@ export default function Projects() {
                   if (i == project.name.split(" ").length - 1) {
                     return (
                       <span className="whitespace-nowrap" key={i}>
-                        {word}{project.src ? <img src={project.src} alt={project.name + " logo"} className="inline-block w-6 h-6 max-[625px]:w-5 max-[625px]:h-5 rounded-sm ml-2 mb-1 align-middle"></img> : ""}
+                        {word}{project.src ? <img src={project.src} alt={project.name + " logo"} className="inline-block w-6 h-6 max-[625px]:w-5 max-[625px]:h-5 rounded-sm ml-2 max-[625px]:ml-1 mb-1 align-middle"></img> : ""}
                       </span>
                     )
                   }
