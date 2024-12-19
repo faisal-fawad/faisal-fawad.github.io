@@ -14,7 +14,7 @@ const text = [
   <img src="/canada-life/contributions.png" alt="Contribution activity of Faisal Fawad on GitLab"/>,
   <br/>,
   <p>As mentioned previously, I mainly worked on the migration of our CI/CD pipeline, which was a lot of manual work. We addressed these issues by writing automation scripts using Python and Bash, which would make the necessary changes to Maven and Helm files while also interacting with RESTful APIs including GitLab and JIRA. Apart from the migration, I also had the opportunity to do some development work on microservices written in Java with the Spring framework. These microservices are used by Canada Life's suite of insurance products, with the main one being <a href="https://my.canadalife.com/" target="_blank">https://my.canadalife.com/</a>. I gained insight into some exciting Java frameworks that Canada Life uses, which are briefly described below:</p>,
-  <ul style={{listStyleType: "initial", margin: "initial", padding: "0 0 0 20px"}}>
+  <ul style={{listStyleType: "initial", margin: "initial", padding: "0 0 0 35px"}}>
     <li>JUnit + Mockito - enables consistent testing by isolating external dependencies</li>
     <li>Spring Data JPA + SQL - enables straightforward database querying within the microservice</li>
     <li>Lombok - automatically generates code that follows OOP best practices</li>
@@ -24,7 +24,7 @@ const text = [
   <p>In summary, during my time at Canada Life, I primarily worked on the migration of our CI/CD pipeline from Bamboo to GitLab; I also had the opportunity to do some API development work. I gained exposure to many technologies and tools, particularly Java, Spring, SQL, Python, Bash, CI/CD, and Docker.</p>,
   <br/>,
   <p>It was a pleasure to work with everyone on my team. I'll specifically highlight a few people who I worked with the most:</p>,
-  <ul style={{listStyleType: "initial", margin: "initial", padding: "0 0 0 20px"}}>
+  <ul style={{listStyleType: "initial", margin: "initial", padding: "0 0 0 35px"}}>
     <li>Bryan Johnson and Ethan Scruton - software developers who I worked closely with throughout the migration</li>
     <li>Mike Lucas and Vincent Yang - engineers who helped me whenever I got stuck on just about anything</li>
     <li>Julie Fraser - my manager who constantly checked up on me and helped me set goals throughout the work term</li>

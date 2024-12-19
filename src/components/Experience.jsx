@@ -4,7 +4,7 @@ export default function Experience() {
   const experiences = [
     {
       name: "Ericsson",
-      link: "https://www.ericsson.com/",
+      link: "/blog/ericsson/",
       title: "Software Engineer Intern",
       description: "🌐 Cloud Infrastructure",
       src: "logos/ericsson.jpg",
