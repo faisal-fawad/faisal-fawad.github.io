@@ -10,7 +10,7 @@ export default function Socials() {
   }
 
   return (
-    <div className="flex gap-5 my-5">
+    <div className="flex flex-wrap gap-5 my-5">
       <a className="hover:scale-110 transition-transform" target="_blank" aria-label="My GitHub" href="https://github.com/faisal-fawad">
         <GitHub className="h-10 w-10 max-[625px]:h-8 max-[625px]:w-8 fill-slate-900 dark:fill-slate-200"/>
       </a>

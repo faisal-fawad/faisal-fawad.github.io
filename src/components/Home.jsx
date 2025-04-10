@@ -41,12 +41,12 @@ export default function Home() {
           )
         })}
       </h1>
-      <ul className="flex gap-5 my-5 text-3xl max-[625px]:text-2xl">
-        <li>🖥️</li>
-        <li>🎮</li>
-        <li>🎥</li>
-        <li>🎨</li>
-        <li>✈️</li>
+      <ul className="flex flex-wrap gap-5 my-5 text-3xl max-[625px]:text-2xl">
+        {(["🖥️", "🎮", "🎥", "🎨", "✈️"]).map((emoji, i) => {
+          return (
+            <li key={i} className="inline-block w-10 max-[625px]:w-8 text-center">{emoji}</li>
+          )
+        })}
       </ul>
       <h2 className="text-lg max-[625px]:text-base">
         I've worked @ {experiences.map((exp, index) => {
@@ -64,7 +64,7 @@ export default function Home() {
         })}
       </h2>
       <Socials/>
-      <img src="images/back.png" alt="Backdrop" className="aspect-square object-cover rounded z-10" />
+      <img src="images/back.jpg" alt="Backdrop" className="aspect-square object-cover rounded z-10" />
     </section>
   )
 }
