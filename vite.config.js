@@ -12,8 +12,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         'blog/canada-life': resolve(__dirname, 'blog/canada-life/index.html'),
-        'blog/ericsson': resolve(__dirname, 'blog/canada-life/index.html'),
-        'blog/tesla': resolve(__dirname, 'blog/canada-life/index.html')
+        'blog/ericsson': resolve(__dirname, 'blog/ericsson/index.html'),
+        'blog/tesla': resolve(__dirname, 'blog/tesla/index.html')
       },
     },
   }
