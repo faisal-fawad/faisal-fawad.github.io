@@ -5,7 +5,11 @@ const text = [
   <br/>,
   <img src="/tesla/header.jpg" alt="Image of Tesla Palo Alto interns"/>,
   <br/>,
-  <p>For my third co-op work term, I joined Tesla as a Site Reliability Engineer on the HPC/AI Infrastructure team. This Tesla team is responsible for managing the supercomputers used by both Autopilot and Optimus. For some context, Autopilot is what enables full self-driving in Tesla vehicles, and Optimus is Tesla's very own humanoid robot. A lot of the work is confidential, and hence, for this work term report, I will be talking about a CS topic instead!</p>,  
+  <p>For my third co-op work term, I joined Tesla as a Site Reliability Engineer on the HPC/AI Infrastructure team. For some context, Tesla is a well-known company in the electric vehicle sector! The Tesla team I worked for is responsible for managing the supercomputers used by both Autopilot and Optimus. Quickly explaining these terms, Autopilot is what enables full self-driving in Tesla vehicles, and Optimus is Tesla's very own humanoid robot</p>,  
+  <br/>,
+  <p>My goals at the start of the work term were to: understand what infrastructure my overarching team supports, contribute to a wide variety of infrastructure-related projects, and sharpen my technical skills (Python, Linux, etc.) while also learning new ones. By the end of the work term, I felt I had successfully achieved all these goals. I learned about the various clusters that the HPC team supports, used for ML training, inference, and engineering. I also contributed to multiple projects that are under NDA, but really helped me learn about technologies I'm already familiar with in an HPC setting</p>,
+  <br/>,
+  <p>Since most of the work is confidential, I will instead be talking about a CS topic that is somehow tied to my time at Tesla</p>,
   <br/>,
   <img src="/tesla/nda.png" alt="Meme about signing an NDA"/>,
   <br/>,
@@ -19,7 +23,7 @@ const text = [
   <br/>,
   <p>Overall, I really liked working with a monorepository employing dependency injection. The code felt more modular, scalable, and flexible. Our team was able to iterate quickly, build reliable services, and keep the codebase clean and adaptable, which was crucial when working with large-scale infrastructure like Tesla's AI supercomputers!</p>,
   <br/>,
-  <p>This experience has given me a strong foundation in applying DI principles, and I look forward to carrying these practices into future projects and roles</p>
+  <p>This experience has given me a strong foundation in applying DI principles, and I look forward to carrying these practices into future projects and roles. Shoutout to the entire HPC team for a great summer, both in the office and outside of the office: pickleball, ping pong, and board game nights {"<"}3</p>
 ]
 
 Display(title, text)
