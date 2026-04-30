@@ -3,6 +3,11 @@ import Socials from './Socials.jsx'
 export default function Home() {
   const experiences = [
     {
+      name: "NVIDIA",
+      link: "https://www.nvidia.com/",
+      src: "logos/nvidia.jpg",
+    },
+    {
       name: "Tesla",
       link: "https://www.tesla.com/",
       src: "logos/tesla.jpg",
