@@ -13,7 +13,8 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         'blog/canada-life': resolve(__dirname, 'blog/canada-life/index.html'),
         'blog/ericsson': resolve(__dirname, 'blog/ericsson/index.html'),
-        'blog/tesla': resolve(__dirname, 'blog/tesla/index.html')
+        'blog/tesla': resolve(__dirname, 'blog/tesla/index.html'),
+        'blog/tesla-2': resolve(__dirname, 'blog/tesla-2/index.html')
       },
     },
   }
